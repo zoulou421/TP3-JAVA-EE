@@ -23,7 +23,7 @@ public class Test extends HttpServlet {
 		
 		PrintWriter out=response.getWriter();
 		//out.println("Bonjour");
-		out.println("<!DOCTYPE html>");
+		/*out.println("<!DOCTYPE html>");
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<meta charset=\"utf-8\" />");
@@ -32,7 +32,8 @@ public class Test extends HttpServlet {
 		out.println("<body>");
 		out.println("<h1>Hello from Servlet!</h1>");
 		out.println("</body>");
-		out.println("</html>");
+		out.println("</html>");*/
+		this.getServletContext().getRequestDispatcher("/WEB-INF/page.jsp").forward(request, response);
 		
 	}
 
