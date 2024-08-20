@@ -35,6 +35,8 @@ public class Test extends HttpServlet {
 		out.println("</html>");*/
 		String message="Au revoir!";
 		request.setAttribute("variable", message);
+		
+	    request.setAttribute("heure", "jour");
 		this.getServletContext().getRequestDispatcher("/WEB-INF/page.jsp").forward(request, response);
 		
 	}

@@ -13,6 +13,22 @@
         String variable=(String ) request.getAttribute("variable");
         out.println(variable);
       %>
+      
+      
+       <%
+         for(int i=0; i<10;i++){
+        	 out.println("la ligne numéro :<br />" +i+1);
+         }
+      %>
+      
+       <%
+        String heure=(String ) request.getAttribute("heure");
+        if(heure.equals("jour")){
+        	out.println("Bonjour");
+        }else{
+        	out.println("Bonsoir");
+        }
+      %>
   </p>
 </body>
 </html>
