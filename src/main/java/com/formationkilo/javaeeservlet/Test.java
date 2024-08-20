@@ -33,6 +33,8 @@ public class Test extends HttpServlet {
 		out.println("<h1>Hello from Servlet!</h1>");
 		out.println("</body>");
 		out.println("</html>");*/
+		String message="Au revoir!";
+		request.setAttribute("variable", message);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/page.jsp").forward(request, response);
 		
 	}
