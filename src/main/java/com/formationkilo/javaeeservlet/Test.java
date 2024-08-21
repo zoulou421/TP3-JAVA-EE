@@ -1,5 +1,6 @@
 package com.formationkilo.javaeeservlet;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -37,7 +38,13 @@ public class Test extends HttpServlet {
 		request.setAttribute("variable", message);
 		
 	    request.setAttribute("heure", "jour");
-		this.getServletContext().getRequestDispatcher("/WEB-INF/page.jsp").forward(request, response);
+		//this.getServletContext().getRequestDispatcher("/WEB-INF/page.jsp").forward(request, response);
+		
+		//RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/page.jsp");
+		//	view.include(request, response);
+	    
+	    RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/page.jsp");  
+	    rd.forward(request, response);
 		
 	}
 
