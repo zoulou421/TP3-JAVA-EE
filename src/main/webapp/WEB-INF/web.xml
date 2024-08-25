@@ -2,9 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
   <display-name>javaeeservlet</display-name>
-  <welcome-file-list>
-    <welcome-file>form.jsp</welcome-file>
-  </welcome-file-list>
+ 
   <servlet>
     <description></description>
     <servlet-name>Test</servlet-name>
@@ -33,4 +31,16 @@
     <servlet-name>Bonjour</servlet-name>
     <url-pattern>/Bonjour</url-pattern>
   </servlet-mapping>
+  
+  
+  <!--  >servlet>
+        <servlet-name>WebinfFormServlet</servlet-name>
+        <servlet-class>WebinfFormServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>WebinfFormServlet</servlet-name>
+        <url-pattern>/showForm</url-pattern>
+    </servlet-mapping-->
+  
 </web-app>

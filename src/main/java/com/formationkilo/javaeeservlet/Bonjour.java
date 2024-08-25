@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-@WebServlet("/FormBonjour")
+@WebServlet("/Test2")
 public class Bonjour extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -16,7 +16,6 @@ public class Bonjour extends HttpServlet {
     public Bonjour() {
        
     }
-
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
